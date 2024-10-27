@@ -1,0 +1,13 @@
+
+
+
+
+
+
+
+
+Type '{ color: "secondary"; label: string; variant: "underlined"; dateInputClassNames: { input: string; label: string; }; isInvalid: boolean; errorMessage: string; onChange: (...event: any[]) => void; onBlur: Noop; value: { ...; }; disabled?: boolean | undefined; name: "expirationDate"; ref: RefCallBack; }' is not assignable to type 'Props<DateValue>'.
+  Types of property 'value' are incompatible.
+    Type '{ month: number; calendar: { identifier: string; }; era: string; year: number; day: number; }' is not assignable to type 'DateValue | null | undefined'.
+      Type '{ month: number; calendar: { identifier: string; }; era: string; year: number; day: number; }' is missing the following properties from type 'ZonedDateTime': #private, hour, minute, second, and 11 more.ts(2322)
+(alias) const DatePicker: <T extends DateValue>(props: DatePickerProps<T>) => React.ReactElement
